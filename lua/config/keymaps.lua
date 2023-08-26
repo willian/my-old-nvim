@@ -27,6 +27,14 @@ map("n", "N", "Nzzzv")
 -- use jk to exit insert mode
 map("i", "jk", "<ESC>")
 
+-- overwrite lazyvim mappings with vim-tmux-navigator mappings
+-- see: https://github.com/christoomey/vim-tmux-navigator/blob/master/plugin/tmux_navigator.vim
+map("n", "<C-h>", ":<C-U>TmuxNavigateLeft<CR>", { silent = true })
+map("n", "<C-j>", ":<C-U>TmuxNavigateDown<CR>", { silent = true })
+map("n", "<C-k>", ":<C-U>TmuxNavigateUp<CR>", { silent = true })
+map("n", "<C-l>", ":<C-U>TmuxNavigateRight<CR>", { silent = true })
+map("n", "<C-\\>", ":<C-U>TmuxNavigatePrevious<CR>", { silent = true })
+
 -- Visual --
 
 -- move selected lines
