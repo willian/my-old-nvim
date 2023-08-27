@@ -5,8 +5,6 @@ return {
     vim.list_extend(opts.ensure_installed, {
       "comment",
       "css",
-      "dockerfile",
-      "elixir",
       "git_config",
       "git_rebase",
       "gitattributes",
@@ -19,12 +17,9 @@ return {
       "php",
       "phpdoc",
       "prisma",
-      "ruby",
       "scss",
       "sql",
       "svelte",
-      "terraform",
-      "toml",
       "vue",
     })
   end,
