@@ -16,5 +16,7 @@ return {
     ]]
 
     opts.section.header.val = vim.split(logo, "\n", { trimempty = true })
+    opts.section.footer.opts.hl = "DashboardFooter"
+    opts.section.header.opts.hl = "DashboardHeader"
   end,
 }
