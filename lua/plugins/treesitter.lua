@@ -12,6 +12,7 @@ return {
       "gitignore",
       "go",
       "graphql",
+      "http",
       "jsdoc",
       "nix",
       "php",
