@@ -4,6 +4,7 @@ return {
     opts = {
       defaults = {
         ["<leader>T"] = { name = "+terminals" },
+        ["<leader>cp"] = { name = "+packages" },
       },
     },
   },

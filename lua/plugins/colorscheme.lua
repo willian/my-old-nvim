@@ -6,6 +6,11 @@ return {
     ---@class CatppuccinOptions
     opts = {
       transparent_background = true,
+      custom_highlights = function(colors)
+        return {
+          PackageInfoOutdatedVersion = { fg = colors.peach },
+        }
+      end,
     },
   },
   {
