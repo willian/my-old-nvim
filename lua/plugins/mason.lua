@@ -12,6 +12,7 @@ return {
     ensure_installed = {
       "emmet-language-server",
       "graphql-language-service-cli",
+      "stimulus-language-server",
     },
   },
 }
