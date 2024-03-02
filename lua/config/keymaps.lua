@@ -1,7 +1,3 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
-
 local function map(mode, lhs, rhs, opts)
   local keys = require("lazy.core.handler").handlers.keys
 
@@ -23,6 +19,10 @@ map("n", "<C-u>", "<C-u>zz")
 -- Keeps cursor at the middle while searching
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
+
+-- Git keymaps
+map("n", "<leader>gb", ":Gitsigns toggle_current_line_blame<CR>", { desc = "Toggle current line blame" })
+map("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", { desc = "Preview Hunk" })
 
 -- use jk to exit insert mode
 map("i", "jk", "<ESC>")
