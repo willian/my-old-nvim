@@ -44,6 +44,7 @@ map("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move up" })
 -- Command
 
 map("c", "Q", "q")
+map("c", "Qa", "qa")
 map("c", "W", "w")
 map("c", "WA", "wa")
 map("c", "WQ", "wq")
