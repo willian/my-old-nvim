@@ -11,6 +11,16 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Normal
+-- Increment/decrement
+map("n", "+", "<C-a>", { desc = "Increment" })
+map("n", "-", "<C-x>", { desc = "Decrement" })
+
+-- Select all
+map("n", "<C-a>", "ggVG")
+
+-- Split window
+map("n", "ss", ":split<CR>", { desc = "Split window" })
+map("n", "sv", ":vsplit<CR>", { desc = "Vsplit window" })
 
 -- Keeps cursor at the middle of the screen when jupping top and bottom
 map("n", "<C-d>", "<C-d>zz")
