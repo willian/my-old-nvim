@@ -19,8 +19,11 @@ map("n", "-", "<C-x>", { desc = "Decrement" })
 map("n", "<C-a>", "ggVG")
 
 -- Split window
-map("n", "ss", ":split<CR>", { desc = "Split window" })
-map("n", "sv", ":vsplit<CR>", { desc = "Vsplit window" })
+map("n", "ss", ":split<CR>", { desc = "Split window horizontally" })
+map("n", "sv", ":vsplit<CR>", { desc = "Split window vertically" })
+map("n", "se", "<C-w>=", { desc = "Make splits equal size" })
+map("n", "sx", ":close<CR>", { desc = "Close current split" })
+map("n", "sq", ":close<CR>", { desc = "Close current split" })
 
 -- Keeps cursor at the middle of the screen when jupping top and bottom
 map("n", "<C-d>", "<C-d>zz")
