@@ -12,8 +12,8 @@ end
 
 -- Normal
 -- Increment/decrement
-map("n", "+", "<C-a>", { desc = "Increment" })
-map("n", "-", "<C-x>", { desc = "Decrement" })
+map("n", "<leader>+", "<C-a>", { desc = "Increment" })
+map("n", "<leader>-", "<C-x>", { desc = "Decrement" })
 
 -- Select all
 map("n", "<C-a>", "ggVG")
