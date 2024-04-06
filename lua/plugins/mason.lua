@@ -12,6 +12,7 @@ return {
     ensure_installed = {
       "emmet-language-server",
       "erb-lint",
+      "rubocop",
       "ruby-lsp",
       "stimulus-language-server",
     },
