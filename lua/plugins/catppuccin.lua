@@ -12,7 +12,7 @@ return {
         mocha = require("catppuccin.palettes").get_palette("mocha"),
       }
 
-      local flavour = os.getenv("TERM_IS_DARK") == "true" and "mocha" or "latte"
+      local flavour = os.getenv("TERM_IS_DARK") == "true" and "frappe" or "latte"
 
       ---@class CatppuccinOptions
       local myopts = {
